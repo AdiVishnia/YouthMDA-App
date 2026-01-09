@@ -1,5 +1,7 @@
 # YouthMDA - אפליקציית מגן דוד אדום נוער 🚑
-<img src="YouthMDA/assets/YouthMDAicon.png" width="400" alt="סרטון אפליקציה מגן דוד אדום">
+<div align="center">
+  <img src="docs/video-thumbnail.png" width="300" alt="YouthMDA App Video">
+</div>
 <div dir="rtl">
 
 ## תיאור הפרויקט
@@ -22,7 +24,7 @@
 
 ### סרטון האפליקציה
 <a href="https://drive.google.com/file/d/1kkQyhFYbCCTjV8iN3t-HBR-YZV3E-U6k/view?usp=drive_link">
-  <img src="YouthMDA/Images/loadingscreenMDAYouth.png" width="300" alt="סרטון אפליקציה מגן דוד אדום">
+  <img src="YouthMDA/Images/loadingscreenMDAYouth.jpg" width="300" alt="סרטון אפליקציה מגן דוד אדום">
 </a>
 
 </div>
@@ -57,7 +59,7 @@ YouthMDA is a digital platform designed for MDA (Magen David Adom) youth volunte
 
 ### App Video
 <a href="https://drive.google.com/file/d/1kkQyhFYbCCTjV8iN3t-HBR-YZV3E-U6k/view?usp=drive_link">
-  <img src="YouthMDA/Images/loadingscreenMDAYouth.png" width="300" alt="סרטון אפליקציה מגן דוד אדום">
+  <img src="YouthMDA/Images/loadingscreenMDAYouth.jpg" width="300" alt="YouthMDA-App-Video">
 </a>
 
 ### Installation
