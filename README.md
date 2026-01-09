@@ -65,6 +65,48 @@ cd YouthMDA
 npx expo start --tunnel
 ```
 
+#### Option 2: Docker Installation
+Run the application using Docker for a containerized environment.
+
+**Prerequisites:**
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+- [Expo Go app](https://expo.dev/client) installed on your mobile device (iOS or Android)
+
+**Steps:**
+
+1. **Build the Docker image:**
+   ```bash
+   docker build -t youthmda-app .
+   ```
+
+2. **Run the container:**
+   ```bash
+   docker run -it -p 8081:8081 youthmda-app
+   ```
+   
+   The `-it` flags ensure you can see the interactive output including the QR code in your terminal.
+
+3. **Connect to the app:**
+   - A QR code will appear in your terminal
+   - Open the **Expo Go** app on your mobile device
+   - Scan the QR code displayed in the terminal
+   - The app will load on your device
+
+**How it works:**
+- **Docker** serves as the server - runs the Expo development server inside a container
+- **Expo Go** serves as the client - connects to the server via the QR code and displays the app on your mobile device
+- The connection is established through Expo's tunnel mode, which enables remote access between the server on your computer and your mobile device
+- **Tunnel mode** allows running the app remotely - you don't need to be near the server or on the same network. The tunnel creates a secure connection that works from anywhere
+
+**Dockerfile Explanation:**
+- Uses Node.js 20 Alpine as the base image
+- Sets working directory to `/app/YouthMDA`
+- Installs Expo CLI and required tunnel dependencies (`@expo/ngrok`)
+- Copies package files and installs project dependencies
+- Copies application code
+- Exposes port 8081 for Expo development server
+- Starts Expo in tunnel mode to enable remote access
+
 ### Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -78,6 +120,49 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 <div dir="rtl">
+
+### התקנה באמצעות Docker
+
+הרצת האפליקציה באמצעות Docker לסביבה מבודדת.
+
+**דרישות מוקדמות:**
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) מותקן ופועל
+- אפליקציית [Expo Go](https://expo.dev/client) מותקנת במכשיר הנייד שלכם (iOS או Android)
+
+**שלבים:**
+
+1. **בניית תמונת Docker:**
+   ```bash
+   docker build -t youthmda-app .
+   ```
+
+2. **הרצת הקונטיינר:**
+   ```bash
+   docker run -it -p 8081:8081 youthmda-app
+   ```
+   
+   הדגלים `-it` מבטיחים שתוכלו לראות את הפלט האינטראקטיבי כולל קוד QR בטרמינל.
+
+3. **חיבור לאפליקציה:**
+   - קוד QR יופיע בטרמינל שלכם
+   - פתחו את אפליקציית **Expo Go** במכשיר הנייד שלכם
+   - סרקו את קוד ה-QR המוצג בטרמינל
+   - האפליקציה תיטען במכשיר שלכם
+
+**איך זה עובד:**
+- **Docker** משמש כשרת - מריץ את שרת הפיתוח של Expo בתוך קונטיינר
+- **Expo Go** משמש כללקוח - מתחבר לשרת דרך קוד ה-QR ומציג את האפליקציה במכשיר הנייד שלכם
+- הקשר מתבצע דרך מצב tunnel של Expo, המאפשר חיבור מרחוק בין השרת במחשב שלכם למכשיר הנייד
+- **מצב Tunnel** מאפשר הרצה מרחוק - אין צורך להיות בסמוך לשרת או באותה רשת. ה-tunnel יוצר חיבור מאובטח שעובד מכל מקום
+
+**הסבר על Dockerfile:**
+- משתמש ב-Node.js 20 Alpine כתמונת בסיס
+- מגדיר תיקיית עבודה ל-`/app/YouthMDA`
+- מתקין את Expo CLI ותלויות tunnel נדרשות (`@expo/ngrok`)
+- מעתיק קבצי חבילות ומתקין תלויות פרויקט
+- מעתיק את קוד האפליקציה
+- חושף פורט 8081 לשרת הפיתוח של Expo
+- מפעיל את Expo במצב tunnel לאפשר גישה מרחוק
 
 ### צור קשר
 * מפתח: עדי וישניה
