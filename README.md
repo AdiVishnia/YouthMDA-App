@@ -20,6 +20,8 @@
 
 האפליקציה היא המקום המרכזי שלכם לקבל מידע, לתרגל ולשפר את הכישורים הרפואיים בצורה נוחה וזמינה, תוך שמירה על חוויית שימוש פשוטה וידידותית.
 
+### סרטון האפליקציה
+[![סרטון האפליקציה](YouthMDA/assets/YouthMDAicon.png)](https://drive.google.com/file/d/1kkQyhFYbCCTjV8iN3t-HBR-YZV3E-U6k/view?usp=drive_link)
 </div>
 
 ## Project Description (English)
@@ -49,6 +51,9 @@ YouthMDA is a digital platform designed for MDA (Magen David Adom) youth volunte
 * iOS version 12.0 or higher
 * Android version 8.0 or higher
 * Internet connection
+
+### App Video
+[![App Video](YouthMDA/assets/YouthMDAicon.png)](https://drive.google.com/file/d/1kkQyhFYbCCTjV8iN3t-HBR-YZV3E-U6k/view?usp=drive_link)
 
 ### Installation
 
