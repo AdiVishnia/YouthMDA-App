@@ -2,16 +2,25 @@
 import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore, collection, doc, getDoc } from 'firebase/firestore';
+import {
+  FIREBASE_API_KEY,
+  FIREBASE_AUTH_DOMAIN,
+  FIREBASE_PROJECT_ID,
+  FIREBASE_STORAGE_BUCKET,
+  FIREBASE_MESSAGING_SENDER_ID,
+  FIREBASE_APP_ID,
+  FIREBASE_MEASUREMENT_ID,
+} from '@env';
 
-// Firebase config with hardcoded values
+// Firebase config using values from .env 
 const firebaseConfig = {
-  apiKey: "AIzaSyCz6tVWi-xrc_ekvymQjp79rDmCxO9ekeM",
-  authDomain: "projectmda-70284.firebaseapp.com",
-  projectId: "projectmda-70284",
-  storageBucket: "projectmda-70284.firebasestorage.app",
-  messagingSenderId: "1095907159368",
-  appId: "1:1095907159368:web:ca60753b29dc17344a177d",
-  measurementId: "G-HM7HFEXXSL"
+  apiKey: FIREBASE_API_KEY,
+  authDomain: FIREBASE_AUTH_DOMAIN,
+  projectId: FIREBASE_PROJECT_ID,
+  storageBucket: FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
+  appId: FIREBASE_APP_ID,
+  measurementId: FIREBASE_MEASUREMENT_ID,
 };
 
 // Ensure Firebase is initialized only once
@@ -42,3 +51,4 @@ const getUserData = async (userId) => {
 // Export everything at once
 export { auth, db, getUserData };
 
+ 
